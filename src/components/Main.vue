@@ -198,23 +198,82 @@
         </div>
       </div>
     </section>
-    <section>
+    <section class="section-pricing-plan">
       <div class="container">
-        <div class="row">
-          <div>
-            <div>
+        <div class="row pricing-plan-info">
+          <div class="col-lg-4 col-md-12">
+            <div class="pricing-plan-title">
               <span>Pricing Plan</span>
             </div>
-            <div>
+            <div class="pricing-plan-text mt-5">
               <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet.
               </span>
             </div>
-            <div>
-              <ul>
-                <li><a href="">Monthly</a></li>
-                <li><a href="">Yearly</a></li>
-              </ul>
+            <div class="pricing-plan-buttons mt-5">
+              <div class="pricing-plan-button1">Monthly</div>
+              <div class="pricing-plan-button2">Yearly</div>
             </div>
+          </div>
+          <div class="col-lg-4 col-md-6 pricing-plan-packet">
+            <div>
+              <img :src="require('../assets/img/rocket.svg')" alt="">
+            </div>
+            <div class="pricing-plan-list-title mt-3">
+              <span>Premium</span>
+            </div>
+            <div>
+              <dl class="pricing-plan-list mt-3">
+                <dd>2gb Hosting</dd>
+                <dd>10 Custom Domain</dd>
+                <dd>SSD Hosting</dd>
+                <dd>50 gb Bandwith</dd>
+                <dd>Free Support</dd>
+              </dl>
+            </div>
+            <div class="pricing-plan-price mt-3">
+              <span>$49.00</span>
+            </div>
+            <div class="button-try-now mt-3">
+              <a href="" class="batton_dowload"> Try Now</a>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 pricing-plan-packet">
+            <div>
+              <img :src="require('../assets/img/rocket.svg')" alt="">
+            </div>
+            <div class="pricing-plan-list-title mt-3">
+              <span>Standart</span>
+            </div>
+            <div>
+              <dl class="pricing-plan-list mt-3">
+                <dd>2gb Hosting</dd>
+                <dd>10 Custom Domain</dd>
+                <dd>SSD Hosting</dd>
+                <dd>50 gb Bandwith</dd>
+                <dd>Free Support</dd>
+              </dl>
+            </div>
+            <div class="pricing-plan-price mt-3">
+              <span>$49.00</span>
+            </div>
+            <div class="button-try-now mt-3">
+              <a href="" class="batton_dowload"> Try Now</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-slider">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="section-slider__content">
+            <div class="section-slider__image">
+              <img :src="require('../assets/img/sliderImage.svg')" alt="" class="img-fluid">
+            </div>
+            <carousel-slider
+                :carousel_data="sliderItems"
+            />
           </div>
         </div>
       </div>
@@ -285,19 +344,77 @@
         </div>
       </div>
     </section>
-    <section class="section-slider">
-      <div class="container-fluid">
-        <div class="row">
-          <div class="section-slider__content">
-            <div class="section-slider__image">
-              <img :src="require('../assets/img/sliderImage.svg')" alt="" class="img-fluid">
+    <section class="section-get-started">
+      <div class="container">
+        <div class="get-started-flex">
+            <div class="get-started-info">
+              <div class="get-started-title">
+                <span>Try 30 Days Free Trial</span>
+              </div>
+              <div class="get-started-text mt-5">
+                <span>No credit card reauired</span>
+              </div>
             </div>
-            <carousel-slider
-                :carousel_data="sliderItems"
-            />
+            <div class="get-started-button ">
+              <a href="#">Get Stared</a>
+            </div>
+        </div>
+      </div>
+    </section>
+    <section class="section-subscribe">
+      <div class="container">
+        <div class="col-6 subscribe-block">
+          <div class="subscribe-title">
+            <span>AppSon</span>
+          </div>
+          <div class="input-group mb-3 mt-5">
+            <input type="text" class="form-control" placeholder="Enter your Email" aria-label="Recipient's username" aria-describedby="button-addon2">
+            <button class="btn btn-outline-secondary" type="button" id="button-addon2">SUBSCRIBE</button>
           </div>
         </div>
       </div>
+    </section>
+    <section class="section-footer">
+      <footer class="container">
+
+          <div class="row footer-info-blocks">
+            <div class="col-lg-6 col-md-12 footer-copyright">
+              <ul class="nav justify-content-center footer-text-copyright">
+                <li class="nav-item">
+                  <a class="nav-link" href="#">© 2018 Copyright, All Rights Reserved by AppSon</a>
+                </li>
+              </ul>
+            </div>
+            <div class="col-lg-4 col-md-12 footer-links">
+              <ul class="nav justify-content-center footer-links-menu">
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Terms & Condition</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Privacy Policy</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Help</a>
+                </li>
+              </ul>
+            </div>
+            <div class="col-lg-2 col-md-12">
+              <div class="footer-social">
+                <div>
+                  <img :src="require('../assets/img/facebook.svg')" alt="">
+                </div>
+                <div>
+                  <img :src="require('../assets/img/twitter.svg')" alt="">
+                </div>
+                <div>
+                  <img :src="require('../assets/img/youtube.svg')" alt="">
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+      </footer>
     </section>
   </div>
 
