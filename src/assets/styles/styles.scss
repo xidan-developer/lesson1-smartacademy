@@ -40,6 +40,7 @@ ul{
     height: 100px;
     padding: 0 126px 0 130px;
     display: flex;
+    flex-wrap: wrap;
 
     .logo {
       text-align: center;
@@ -172,6 +173,7 @@ ul{
     .news-item {
       display: flex;
       flex-direction: column;
+      justify-content: space-evenly;
 
       .item {
         display: flex;
@@ -183,7 +185,18 @@ ul{
     }
   }
 }
-
+.selected-news__link {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 150%;
+  display: flex;
+  color: #0063DD;
+}
+.item__image img {
+  box-shadow: 0px 4px 20px rgb(0 70 156 / 8%);
+  border-radius: 5px;
+}
 .sign{
   background: #0063DD;
   border-radius: 25px;
@@ -214,6 +227,28 @@ ul{
   }
 }
 
+.news-info {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+
+}
+.news-title {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 32px;
+  line-height: 40px;
+}
+.news-text {
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 150%;
+  text-align: center;
+  max-width: 722px;
+  margin: auto;
+  margin-top: 20px;
+}
 .section-slider {
   background: #F5FCFD;
 
@@ -376,6 +411,8 @@ li.nav-item {
 }
 .does-works-icons {
   display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 .does-works {
   display: flex;
@@ -383,6 +420,10 @@ li.nav-item {
   justify-content: space-evenly;
   height: 635px;
   text-align: center;
+}
+.icon-item-text-description {
+  width: 333px;
+  margin-top: 20px;
 }
 
 .carousel-multi-item .carousel-indicators li {
@@ -481,7 +522,7 @@ button#button-addon2 {
   line-height: 150%;
   border-color: snow;
   height: 50px;
-  width: 166px;
+  max-width: 166px;
 }
 .section-footer {
   height: 125px;
@@ -537,14 +578,24 @@ align-items: center;
   font-weight: 300;
   font-size: 16px;
   line-height: 150%;
+  margin-top: 20px;
 }
 .advantage__message--link {
+  display: flex;
+  flex-wrap: nowrap;
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
   line-height: 150%;
   color: #0063DD;
+  margin-top: 20px;
 }
+.news-arrow {
+  margin-left: 20px;
+}
+
+
+
 .section-pricing-plan{
   height: 836px;
   display: flex;
@@ -557,6 +608,11 @@ align-items: center;
 }
 .pricing-plan-packet {
   text-align: center;
+  background: #FFFFFF;
+  box-shadow: 0px 4px 20px rgb(0 36 80 / 8%);
+  border-radius: 5px;
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 .button-try-now{
   display: flex;
@@ -649,6 +705,14 @@ align-items: center;
   font-weight: 300;
   font-size: 16px;
   line-height: 155%;
+  width: 331px;
+}
+.icon-item-text-title {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 22px;
+  margin-top: 20px;
 }
 
 @media screen and (max-width: 1168px) {
@@ -670,6 +734,18 @@ align-items: center;
     margin-top: 2rem !important;
   }
 }
+@media screen and (max-width: 767px) {
+  .section-pricing-plan {
+    height: 1400px;
+  }
+  .section-news{
+    height: 1200px;
+  }
+  .does-works {
+    height: 787px;
+  }
+}
+
 @media screen and (max-width: 990px) {
   .pricing-plan-info{
     text-align: center;

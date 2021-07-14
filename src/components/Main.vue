@@ -3,11 +3,11 @@
     <section class="section main-section">
       <header class="container-fluid">
         <div class="header justify-content-center">
-          <div class="col-lg-2 logo">
+          <div class="col-lg-2 col-md-12 logo">
             <a href="#">AppSon</a>
           </div>
-          <div class="col-md-10 main-menu">
-            <ul class="nav justify-content-end">
+          <div class="col-lg-10 col-md-12 main-menu">
+            <ul class="nav justify-content-lg-end justify-content-md-center justify-content-center">
               <li class="nav-item">
                 <a class="nav-link" href="#">Home</a>
               </li>
@@ -119,6 +119,9 @@
                 </div>
                 <div class="advantage__message--link">
                   <span>Read More</span>
+                  <div class="news-arrow">
+                    <img :src="require('../assets/img/arrowright.svg')" alt="">
+                  </div>
                 </div>
               </div>
             </div>
@@ -135,6 +138,9 @@
                 </div>
                 <div class="advantage__message--link">
                   <span>Read More</span>
+                  <div class="news-arrow">
+                    <img :src="require('../assets/img/arrowright.svg')" alt="">
+                  </div>
                 </div>
               </div>
             </div>
@@ -281,22 +287,34 @@
     <section class="section-news">
       <div class="container">
         <div class="row">
-          <div class="news">
+          <div class="news-info">
+            <div class="news-title">
+              <span>
+                Latest News From Us
+              </span>
+            </div>
+            <div class="news-text">
+              <span>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet.
+              </span>
+            </div>
+          </div>
+          <div class="news mt-5">
             <div class="col-md-6 selected-news">
               <div class="selected-news__preview">
                 <img :src="require('../assets/img/select-news.svg')" alt="" class="img-fluid">
               </div>
-              <div class="selected-news__title">
+              <div class="selected-news__title mt-5">
                 <h3>The master bedroom suite is phenomenally spacious</h3>
               </div>
-              <div class="selected-news__info">
+              <div class="selected-news__info mt-5">
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
               </div>
               <div class="selected-news__link">
-                <a href="#">
+
                   <span>Continue Reading</span>
-                  <span class="icon"></span>
-                </a>
+                  <div class="news-arrow"><img :src="require('../assets/img/arrowright.svg')" alt=""></div>
+
               </div>
             </div>
             <div class="col-lg-6 col-md-6 col-sm-12 news-item">
@@ -351,7 +369,7 @@
               <div class="get-started-title">
                 <span>Try 30 Days Free Trial</span>
               </div>
-              <div class="get-started-text mt-5">
+              <div class="get-started-text mt-3">
                 <span>No credit card reauired</span>
               </div>
             </div>
